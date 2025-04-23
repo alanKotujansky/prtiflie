@@ -1,0 +1,223 @@
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Botão menu*/
+#menu-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#menu-button .menu-icon {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Barra lateral */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -270px;
+    width: 270px;
+    height: 100%;
+    background-color: #f5f5dc;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.3);
+    padding: 60px 20px 20px 20px;
+    overflow-y: auto;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu.open {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul > li {
+    margin-bottom: 10px;
+}
+
+.category-button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    padding: 5px 0;
+}
+
+.category-button:focus {
+    outline: none;
+    color: #555;
+}
+
+.subcategory-list {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-weight: normal;
+    font-size: 16px;
+    display: none;
+}
+
+.subcategory-list li {
+    margin-bottom: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    max-width: 800px;
+    margin: 100px auto 40px auto;
+    padding: 0 20px;
+}
+
+/* inicil */
+.intro {
+    text-align: left;
+}
+
+.portfolio-label {
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.name-and-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.name {
+    font-size: 36px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.face-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Texto de apresentação */
+.presentation {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* currículo */
+.curriculo {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.curriculo-link {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.curriculo-image {
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    border: 2px solid #333;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.curriculo-image:hover {
+    transform: scale(1.05);
+}
+
+/* Títulos */
+.curriculo h2 {
+    font-size: 24px;
+    margin: 20px 0 15px 0;
+}
+
+/* Botões 1 ano e 2 ano */
+.anos-buttons {
+    margin-bottom: 40px;
+}
+
+.anos-buttons button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.anos-buttons button:hover {
+    background-color: #555;
+}
+
+/* rodapé e ícones */
+footer {
+    background-color: #d6ad42;
+    padding: 60px 20px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+footer h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.contato-item {
+    margin-bottom: 15px;
+    width: 150px;
+    vertical-align: top;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    object-fit: contain;
+}
+
+.contato-item p, footer a {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
+}
+
